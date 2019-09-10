@@ -157,7 +157,7 @@ def main(argv):
                 saver.save(sess=sess, save_path=save_path)
                 print('Improvement')
 
-            #If there wasn't improvements in a while, stop training.
+            #If there weren't improvements in a while, stop training.
             if epoch - last_improvement > improvement_epochs:
                 print('No improvements in a while. Stopping optimization.')
                 break
